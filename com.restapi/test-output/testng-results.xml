@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-28T16:30:46 CEST" name="Suite" finished-at="2026-04-28T16:30:56 CEST" duration-ms="10118">
+    <groups>
+    </groups>
+    <test started-at="2026-04-28T16:30:46 CEST" name="Test" finished-at="2026-04-28T16:30:56 CEST" duration-ms="10118">
+      <class name="testcases.get_method">
+        <test-method signature="get_call()[pri:0, instance:testcases.get_method@7ec7ffd3]" started-at="2026-04-28T16:30:52 CEST" name="get_call" finished-at="2026-04-28T16:30:53 CEST" depends-on-methods="authenticate_call" duration-ms="776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_call -->
+      </class> <!-- testcases.get_method -->
+      <class name="base.authenticate">
+        <test-method signature="authenticate_call()[pri:0, instance:base.authenticate@4a94ee4]" started-at="2026-04-28T16:30:47 CEST" name="authenticate_call" finished-at="2026-04-28T16:30:52 CEST" duration-ms="5692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticate_call -->
+      </class> <!-- base.authenticate -->
+      <class name="testcases.post_method">
+        <test-method signature="post_call()[pri:0, instance:testcases.post_method@5b239d7d]" started-at="2026-04-28T16:30:53 CEST" name="post_call" finished-at="2026-04-28T16:30:56 CEST" duration-ms="3285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post_call -->
+      </class> <!-- testcases.post_method -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

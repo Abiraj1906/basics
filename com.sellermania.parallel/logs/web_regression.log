@@ -1,0 +1,74 @@
+[2026-03-30T16:52:05.967Z] INFO  testcases.Logintest -
+					Launching browser:firefox
+[2026-03-30T16:52:35.230Z] INFO  testcases.Logintest -
+					login successfull
+[2026-03-30T16:52:55.286Z] INFO  testcases.Ordertest -
+					Launching browser:firefox
+[2026-03-30T16:53:04.089Z] INFO  testcases.Ordertest -
+					order menu opening
+[2026-03-30T16:53:33.402Z] INFO  testcases.Logintest -
+					Launching browser:firefox
+[2026-03-30T16:53:50.776Z] INFO  testcases.Logintest -
+					login successfull
+[2026-03-30T16:54:10.794Z] INFO  testcases.Ordertest -
+					Launching browser:firefox
+[2026-03-30T17:05:26.443Z] INFO  testcases.Logintest -
+					Launching browser:chrome
+[2026-03-30T17:05:26.443Z] INFO  testcases.Logintest -
+					Launching browser:firefox
+[2026-03-30T17:05:46.305Z] INFO  testcases.Logintest -
+					login successfull
+[2026-03-30T17:05:50.851Z] INFO  testcases.Logintest -
+					login successfull
+[2026-03-30T17:05:50.984Z] INFO  testcases.Ordertest -
+					Launching browser:chrome
+[2026-03-30T17:05:54.144Z] INFO  testcases.Ordertest -
+					order menu opening
+[2026-03-30T17:06:04.348Z] INFO  testcases.Inventorytest -
+					Launching browser:chrome
+[2026-03-30T17:06:06.330Z] INFO  testcases.Inventorytest -
+					Inventory menu opening
+[2026-03-30T17:06:06.663Z] INFO  testcases.Ordertest -
+					Launching browser:firefox
+[2026-03-30T17:06:16.476Z] INFO  testcases.Filemanagement_cases -
+					Launching browser:chrome
+[2026-03-30T17:06:16.996Z] INFO  testcases.Ordertest -
+					order menu opening
+[2026-03-30T17:06:18.477Z] INFO  testcases.Filemanagement_cases -
+					File management opening
+[2026-03-30T17:17:54.987Z] INFO  testcases.Logintest -
+					Launching browser:chrome
+[2026-03-30T17:17:54.987Z] INFO  testcases.Logintest -
+					Launching browser:firefox
+[2026-03-30T17:18:08.454Z] INFO  testcases.Logintest -
+					login successfull
+[2026-03-30T17:18:08.547Z] INFO  testcases.Ordertest -
+					Launching browser:chrome
+[2026-03-30T17:18:11.380Z] INFO  testcases.Logintest -
+					login successfull
+[2026-03-30T17:18:11.548Z] INFO  testcases.Ordertest -
+					order menu opening
+[2026-03-30T17:18:21.719Z] INFO  testcases.Inventorytest -
+					Launching browser:chrome
+[2026-03-30T17:18:23.972Z] INFO  testcases.Inventorytest -
+					Inventory menu opening
+[2026-03-30T17:18:34.225Z] INFO  testcases.Filemanagement_cases -
+					Launching browser:chrome
+[2026-03-30T17:18:34.994Z] INFO  testcases.Ordertest -
+					Launching browser:firefox
+[2026-03-30T17:18:37.284Z] INFO  testcases.Filemanagement_cases -
+					File management opening
+[2026-03-30T17:18:44.283Z] INFO  testcases.Ordertest -
+					order menu opening
+[2026-03-30T17:18:47.398Z] INFO  testcases.Wereprice_test -
+					Launching browser:chrome
+[2026-03-30T17:18:49.898Z] INFO  testcases.Wereprice_test -
+					Wereprice menu opening
+[2026-03-30T17:18:50.523Z] INFO  testcases.Openlisting_test -
+					Launching browser:chrome
+[2026-03-30T17:18:52.569Z] INFO  testcases.Openlisting_test -
+					opening openlisting  fro Rakuten mkp
+[2026-03-30T17:18:53.214Z] INFO  testcases.Setting_cases -
+					Launching browser:chrome
+[2026-03-30T17:18:55.724Z] INFO  testcases.Setting_cases -
+					Settings menu opening

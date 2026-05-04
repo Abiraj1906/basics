@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<!-- -Tells Log4j2 how verbose to be about its own internal issues. Here 
+		only WARN and above for Log4j2 system itself.- -->
+
+
+
+
+
+	<!-- Define appenders (where logs go) -->
+	<Appenders>   <!-- where to generate log file defined here -->
+
+		<!-- Console appender: logs printed on terminal -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="[%d{yyyy-MM-dd'T'HH:mm:ss.SSS'Z'}] [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+
+		<!-- File appender: logs saved to a file -->
+		<File name="File" fileName="logs/web_regression.log" append="true">
+			<PatternLayout>
+				<pattern>[%d{yyyy-MM-dd'T'HH:mm:ss.SSS'Z'}] %-5level %logger{36} -
+					%msg%n</pattern>
+			</PatternLayout>
+		</File>
+
+	</Appenders>
+
+	<!-- Define loggers (what packages/classes to log and at what level) -->
+	<Loggers>
+
+		<!-- Application logger -->
+		<Logger name="selenium" level="debug" additivity="false">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="File" />
+		</Logger>
+
+		<!-- Root logger: fallback if no specific logger matches -->
+		<Root level="info">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="File" />
+		</Root>
+
+	</Loggers>
+</Configuration>

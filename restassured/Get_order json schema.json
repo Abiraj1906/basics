@@ -1,0 +1,308 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "marketplaceId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "shippingAmount": {
+      "type": "number"
+    },
+    "totalAmount": {
+      "type": "number"
+    },
+    "purchaseDate": {
+      "type": "string"
+    },
+    "paymentDate": {
+      "type": "string"
+    },
+    "specialComments": {},
+    "loyaltyProgram": {},
+    "isBusiness": {
+      "type": "boolean"
+    },
+    "validVatNumber": {},
+    "purchaseOrderNumber": {},
+    "lines": {
+      "type": "object",
+      "properties": {
+        "58450232993562": {
+          "type": "object",
+          "properties": {
+            "orderLineId": {
+              "type": "string"
+            },
+            "sku": {
+              "type": "string"
+            },
+            "chainId": {},
+            "quantityPurchased": {
+              "type": "number"
+            },
+            "sellermaniaStatus": {
+              "type": "string"
+            },
+            "itemName": {
+              "type": "string"
+            },
+            "itemNote": {},
+            "itemCondition": {
+              "type": "string"
+            },
+            "position": {},
+            "ean": {},
+            "asin": {
+              "type": "string"
+            },
+            "externalOrderId": {},
+            "orderLineShipping": {
+              "type": "object",
+              "properties": {
+                "shippingType": {
+                  "type": "string"
+                },
+                "shippingCarrier": {},
+                "shippingService": {},
+                "trackingNumber": {},
+                "trackingUrl": {},
+                "deliveryInstructions": {}
+              },
+              "required": [
+                "shippingType",
+                "shippingCarrier",
+                "shippingService",
+                "trackingNumber",
+                "trackingUrl",
+                "deliveryInstructions"
+              ]
+            },
+            "paymentStatus": {
+              "type": "string"
+            },
+            "acceptedDate": {
+              "type": "string"
+            },
+            "prices": {
+              "type": "object",
+              "properties": {
+                "price": {
+                  "type": "number"
+                },
+                "shippingFee": {
+                  "type": "number"
+                },
+                "insurancePrice": {},
+                "itemDiscount": {
+                  "type": "number"
+                },
+                "shippingDiscount": {
+                  "type": "number"
+                },
+                "refundedAmount": {
+                  "type": "number"
+                },
+                "optionalFeaturePrice": {
+                  "type": "number"
+                },
+                "optionalFeatureTax": {
+                  "type": "number"
+                },
+                "vatRate": {
+                  "type": "number"
+                },
+                "vatRateShipping": {
+                  "type": "number"
+                },
+                "commissionFee": {},
+                "priceDesignation": {}
+              },
+              "required": [
+                "price",
+                "shippingFee",
+                "insurancePrice",
+                "itemDiscount",
+                "shippingDiscount",
+                "refundedAmount",
+                "optionalFeaturePrice",
+                "optionalFeatureTax",
+                "vatRate",
+                "vatRateShipping",
+                "commissionFee",
+                "priceDesignation"
+              ]
+            },
+            "serialNumber": {},
+            "optionalFeatureType": {},
+            "optionalFeatureText": {},
+            "customizedUrl": {}
+          },
+          "required": [
+            "orderLineId",
+            "sku",
+            "chainId",
+            "quantityPurchased",
+            "sellermaniaStatus",
+            "itemName",
+            "itemNote",
+            "itemCondition",
+            "position",
+            "ean",
+            "asin",
+            "externalOrderId",
+            "orderLineShipping",
+            "paymentStatus",
+            "acceptedDate",
+            "prices",
+            "serialNumber",
+            "optionalFeatureType",
+            "optionalFeatureText",
+            "customizedUrl"
+          ]
+        }
+      },
+      "required": [
+        "58450232993562"
+      ]
+    },
+    "shippingAddress": {
+      "type": "object",
+      "properties": {
+        "fullName": {
+          "type": "string"
+        },
+        "nickName": {},
+        "company": {},
+        "phoneNumber": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "street1": {
+          "type": "string"
+        },
+        "street2": {
+          "type": "string"
+        },
+        "zipCode": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {},
+        "country": {
+          "type": "string"
+        },
+        "relayDetails": {
+          "type": "object",
+          "properties": {
+            "relayId": {},
+            "relayZip": {},
+            "relayCity": {},
+            "relayName": {},
+            "relayAddress": {},
+            "relayCountry": {}
+          },
+          "required": [
+            "relayId",
+            "relayZip",
+            "relayCity",
+            "relayName",
+            "relayAddress",
+            "relayCountry"
+          ]
+        }
+      },
+      "required": [
+        "fullName",
+        "nickName",
+        "company",
+        "phoneNumber",
+        "email",
+        "street1",
+        "street2",
+        "zipCode",
+        "city",
+        "state",
+        "country",
+        "relayDetails"
+      ]
+    },
+    "billingAddress": {
+      "type": "object",
+      "properties": {
+        "fullName": {
+          "type": "string"
+        },
+        "company": {},
+        "phoneNumber": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "street1": {
+          "type": "string"
+        },
+        "street2": {
+          "type": "string"
+        },
+        "zipCode": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {},
+        "country": {
+          "type": "string"
+        },
+        "invoiceUrl": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "fullName",
+        "company",
+        "phoneNumber",
+        "street1",
+        "street2",
+        "zipCode",
+        "city",
+        "state",
+        "country",
+        "invoiceUrl"
+      ]
+    }
+  },
+  "required": [
+    "marketplaceId",
+    "orderId",
+    "currency",
+    "amount",
+    "shippingAmount",
+    "totalAmount",
+    "purchaseDate",
+    "paymentDate",
+    "specialComments",
+    "loyaltyProgram",
+    "isBusiness",
+    "validVatNumber",
+    "purchaseOrderNumber",
+    "lines",
+    "shippingAddress",
+    "billingAddress"
+  ]
+}

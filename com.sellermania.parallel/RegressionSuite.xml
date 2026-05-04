@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="E2E Suite" parallel="false" preserve-order="true">
+
+	<listeners>
+		<listener class-name="utilities.ExtentReportListener"></listener>
+		<listener class-name="utilities.Annotation_transformer" />
+	</listeners>
+
+	<test name="E2E_test">
+
+		<classes>
+
+			<class name="testcases.Logintest" />
+			<class name="testcases.Ordertest" />
+			<class name="testcases.Inventorytest" />
+			<class name="testcases.Filemanagement_cases" />
+			<class name="testcases.Wereprice_test" />
+			<class name="testcases.Openlisting_test" />
+			<class name="testcases.Setting_cases" />
+
+
+
+		</classes>
+
+
+
+	</test>
+
+</suite> <!-- Suite -->
