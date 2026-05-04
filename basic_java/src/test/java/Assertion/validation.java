@@ -21,39 +21,25 @@ public class validation {
 	@Test
 	public void hard_soft_assert() throws IOException {
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
 		driver.get("https://preprod2.platform.sellermania.com");
-	WebElement username=	driver.findElement(By.name("email"));
-	username.isEnabled();
-	//Assert.assertFalse(username);
-	
-	
+		WebElement username = driver.findElement(By.name("email"));
+		username.isEnabled();
+		// Assert.assertFalse(username);
+
 		driver.findElement(By.name("password")).sendKeys("test");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		//Assert.assertEquals(driver.getTitle(), "Sellermania Platform","titlte mismatch");
-		
-//		SoftAssert soft=new SoftAssert();
-//		soft.assertEquals(driver.getTitle(), "sellermania", "title matched");
-//		
-//		
-//		soft.assertAll();
-//		
-//	
-	
-	
-	
-	}
-	
-	
-	
-	
-	
-	
-	
+		Assert.assertEquals(driver.getTitle(), "Sellermania Platform", "titlte mismatch");
 
-	
+		SoftAssert soft = new SoftAssert();
+		soft.assertEquals(driver.getTitle(), "sellermania", "title matched");
+
+		soft.assertAll();
+
+	}
+
 }

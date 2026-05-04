@@ -34,7 +34,7 @@ Thread.sleep(3000);
 		JavascriptExecutor js =((JavascriptExecutor)driver);
 		
 		js.executeScript("console.log('Hello from Selenium');");
-		js.executeScript("console.error('This is a test error');");
+		js.executeScript("console.error('This is a test error and make any changes');");
 //		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("phones");
 //		
 //		driver.findElement(By.id("nav-search-submit-button")).click();

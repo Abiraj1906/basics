@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.amazon">
+      <class name="Assertion.validation">
         <methods>
-          <include name="add_cart"/>
+          <include name="hard_soft_assert"/>
         </methods>
-      </class> <!-- test.amazon -->
+      </class> <!-- Assertion.validation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
