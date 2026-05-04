@@ -40,6 +40,9 @@ public class window {
 		driver.findElement(By.linkText("Terms")).click();
 		
         Set<String> allwindow=driver.getWindowHandles();
+        
+
+         
         for(String child:allwindow) {
         	System.out.println(child);
         	}
@@ -47,16 +50,16 @@ public class window {
         	driver.switchTo().window(parent);
     		System.out.println(driver.getTitle());
           
-    	List<String> list=new ArrayList<String>(allwindow);
-    	driver.switchTo().window(list.get(2));
-    		System.out.println(driver.getTitle());
-    		
-    		driver.findElement(By.linkText("Terms of Service")).click();
-    		
-    		driver.findElement(By.linkText("services")).click();
-    		JavascriptExecutor js=(JavascriptExecutor) driver;
-    		js.executeScript("window,scrollBy(0,1000)");
-    		
+//    	List<String> list=new ArrayList<String>(allwindow);
+//    	driver.switchTo().window(list.get(2));
+//    		System.out.println(driver.getTitle());
+//    		
+//    		driver.findElement(By.linkText("Terms of Service")).click();
+//    		
+//    		driver.findElement(By.linkText("services")).click();
+//    		JavascriptExecutor js=(JavascriptExecutor) driver;
+//    		js.executeScript("window,scrollBy(0,1000)");
+//    		
         }
 		
 		
