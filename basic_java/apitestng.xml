@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="api_testing.authenticate"/>
-      <class name="api_testing.get_method"/>
+    
       <class name="api_testing.get_mkp_call"/>
     </classes>
   </test> <!-- Test -->

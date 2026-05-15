@@ -2,6 +2,7 @@ package windowhandle;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -11,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -34,14 +37,21 @@ public class window {
 		
 		 String parent=driver.getWindowHandle();
 		 System.out.println(parent);
+		 
 
 		driver.findElement(By.linkText("Help")).click();
 		driver.findElement(By.linkText("Privacy")).click();
 		driver.findElement(By.linkText("Terms")).click();
 		
+		// ✅ Wait until 4 windows (1 parent + 3 child)
+
+		   WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.numberOfWindowsToBe(4));
+		
+		
         Set<String> allwindow=driver.getWindowHandles();
         
-
+     
          
         for(String child:allwindow) {
         	System.out.println(child);
@@ -60,6 +70,12 @@ public class window {
 //    		JavascriptExecutor js=(JavascriptExecutor) driver;
 //    		js.executeScript("window,scrollBy(0,1000)");
 //    		
+    		
+    		
+    		
+    		Set<String>set=new HashSet<String>();
+  
+    		
         }
 		
 		

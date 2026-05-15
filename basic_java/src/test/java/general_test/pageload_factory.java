@@ -21,7 +21,7 @@ public class pageload_factory {
 		WebDriverManager.firefoxdriver().setup();
 		
 		FirefoxOptions option=new FirefoxOptions();
-		option.setPageLoadStrategy(PageLoadStrategy.EAGER);
+		option.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		
 		
 		

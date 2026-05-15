@@ -16,9 +16,9 @@ public class Hash_map {
 		map.put("refurbed", 61);
 		map.put("zalando", 54);
 		map.put("rakuten", 3);
+	map.put("amazon", null);
+map.put(null, 25);
 	
-
-		
 		System.out.println(map);
 		Integer AZ=map.get("amazon");
 		System.out.println(AZ);

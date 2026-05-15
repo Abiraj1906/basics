@@ -23,24 +23,24 @@ public class Cookies_handle {
 	driver.get("https://preprod2.platform.sellermania.com");
 	
 	
-	
-	
+	Cookie cookie=new Cookie("", "");
+	driver.manage().addCookie(cookie);
 	
 	//1️⃣ Get all cookies
-Set<Cookie>cookies=driver.manage().getCookies();
+//Set<Cookie>cookies=driver.manage().getCookies();
+//	
+//	for(Cookie cookie:cookies) {
+////		System.out.println(cookie.getName());
+////		System.out.println(cookie.getValue());
+////		System.out.println(cookie.getPath());
+////	System.out.println(cookie.getDomain());
+////	System.out.println(cookie.getClass());
+//		System.out.println(cookie.isHttpOnly());
+//		
+		
+		
+		
 	
-	for(Cookie cookie:cookies) {
-		//System.out.println(cookie.getName());
-		//System.out.println(cookie.getValue());
-		//System.out.println(cookie.getPath());
-	//	System.out.println(cookie.getDomain());
-	//System.out.println(cookie.getClass());
-		System.out.println(cookie.isHttpOnly());
-		
-		
-		
-		
-	}
 	driver.quit();
 	
 	}	

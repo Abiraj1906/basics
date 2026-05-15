@@ -3,16 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="api_testing.get_method">
+      <class name="api_testing.get_mkp_call">
         <methods>
-          <include name="get_call"/>
+          <include name="get_mkp"/>
         </methods>
-      </class> <!-- api_testing.get_method -->
-      <class name="api_testing.authenticate">
-        <methods>
-          <include name="authenticate_call"/>
-        </methods>
-      </class> <!-- api_testing.authenticate -->
+      </class> <!-- api_testing.get_mkp_call -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

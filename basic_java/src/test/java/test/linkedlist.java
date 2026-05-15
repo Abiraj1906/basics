@@ -1,6 +1,7 @@
 package test;
 
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class linkedlist {
 
@@ -26,12 +27,17 @@ public class linkedlist {
           linklist.add(13);
           linklist.add(14);
           linklist.add(15);
-		System.out.println(linklist);
 		
 		linklist.get(1);
 		
-	System.out.println(linklist.contains(10));	
+		System.out.println(linklist);
+
+		ListIterator<Integer> list_iter=linklist.listIterator();
 		
+		while(list_iter.hasPrevious()) {
+			System.out.println("previous element"+list_iter.previous());
+		}
+	
 		
 		
 		
