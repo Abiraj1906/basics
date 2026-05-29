@@ -16,4 +16,21 @@ public class super_child extends super_key{
 	
 	
 	}
+	
+	public static void main(String[] args) {
+		
+		super_child sup=new super_child();
+		sup.show();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Assertion.Assertion_validate">
+      <class name="Assertion.Navigation_use">
         <methods>
-          <include name="verify"/>
+          <include name="Navigate_to"/>
         </methods>
-      </class> <!-- Assertion.Assertion_validate -->
+      </class> <!-- Assertion.Navigation_use -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
